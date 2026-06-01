@@ -1,7 +1,7 @@
 class Car:
     def __init__(self, year_model,make):
         self.__year_model = year_model
-        self._make = make
+        self.__make = make
         self.__speed = 0
 
     def accelerate(self):
@@ -12,3 +12,12 @@ class Car:
 
     def get_speed(self):
         return self.__speed
+
+    def display_header(self):
+        print("▀▄▀▄▀▄▀▄" * 6)
+        print("Car Speed Status")
+        print("▀▄▀▄▀▄▀▄" * 6)
+        print("A car entered the road.")
+        print(f"Car Model: {self.__make} ({self.__year_model})")
+        print("Car is ready!")
+        print(f"Current Speed: {self.__speed} mph")

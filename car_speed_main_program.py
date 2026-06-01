@@ -1,15 +1,16 @@
 from car_class import Car
 
-year = int(input("Enter year model:"))
-make = input("Car brand:")
-
+print(" ")
+year = int(input("Enter year model: "))
+make = input("Car brand: ")
+print(" ")
 my_car = Car(year, make)
 
 my_car.display_header()
 
 # Acceleration
-print("\nAcceleration Phase")
-print("-" * 50)
+print("\n\033[91mACCELERATION PHASE\033[0m")
+print("-" * 48)
 
 for lap in range(1,6):
     my_car.accelerate()
@@ -18,12 +19,12 @@ for lap in range(1,6):
 print("\nMax speed reached!")
 
 # Brake
-print("\nBraking Phase")
-print("-" * 50)
+print("\n\033[91mBRAKING PHASE\033[0m")
+print("-" * 48)
 
 for brake in range(1,6):
     my_car.brake()
     print(f"Brake {brake}: Speed = {my_car.get_speed()} mph")
 
 print("\nCar stopped.")
-print("=" * 50)
+print("=" * 48)

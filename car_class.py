@@ -14,9 +14,9 @@ class Car:
         return self.__speed
 
     def display_header(self):
-        print("▀▄▀▄▀▄▀▄" * 6)
-        print("Car Speed Status")
-        print("▀▄▀▄▀▄▀▄" * 6)
+        print("▀▄▀▄▀▄▀▄" * 6 + "\n")
+        print(" " *15 + "Car Speed Status\n")
+        print("▀▄▀▄▀▄▀▄" * 6 + "\n")
         print("A car entered the road.")
         print(f"Car Model: {self.__make} ({self.__year_model})")
         print("Car is ready!")
